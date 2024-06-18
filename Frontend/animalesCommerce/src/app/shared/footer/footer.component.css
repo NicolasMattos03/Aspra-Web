@@ -1,0 +1,298 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.body-special {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: 2n;
+}
+
+/* Ajustes Footer */
+
+footer {
+  width: 100%;
+  background-color: #33b2cf;
+}
+
+.footer {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px;
+}
+
+.footerInfo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.colum1 {
+  max-width: 400px;
+}
+
+.colum1 h1 {
+  font-size: 22px;
+  font-family: MartianMono;
+  text-align: center;
+}
+
+.colum1 p {
+  font-size: 16px;
+  color: rgb(245, 241, 241);
+  margin-top: 20px;
+  text-align: center;
+  font-family: Comfortaa-VariableFont_wght;
+}
+
+.colum2 {
+  max-width: 400px;
+  font-family: MartianMono;
+}
+
+.colum2 h1 {
+  font-size: 22px;
+  font-family: MartianMono;
+  text-align: center;
+}
+
+/*Fin Ajustes Footer*/
+
+/*Inicio Ajustes redes sociales*/
+.redesIcons {
+  padding: 10px;
+  margin-top: 20px;
+  display: inline-block;
+  margin-left: 7%;
+}
+
+.fa-brands.fa-facebook.fa-2xl {
+  cursor: pointer;
+  color: rgb(5, 0, 0);
+  font-size: 35px;
+}
+.fa-brands.fa-facebook.fa-2xl:hover {
+  color: rgb(0, 41, 191);
+  text-decoration: none;
+}
+
+.fa-brands.fa-instagram.fa-2xl {
+  cursor: pointer;
+  color: rgb(5, 0, 0);
+  font-size: 35px;
+}
+.fa-brands.fa-instagram.fa-2xl:hover {
+  color: rgb(206, 3, 232);
+  text-decoration: none;
+}
+
+.fa-brands.fa-whatsapp.fa-2xl {
+  cursor: pointer;
+  color: rgb(5, 0, 0);
+  font-size: 35px;
+}
+.fa-brands.fa-whatsapp.fa-2xl:hover {
+  color: rgb(2, 146, 16);
+  text-decoration: none;
+}
+
+.fa-brands.fa-youtube.fa-2xl {
+  cursor: pointer;
+  color: rgb(5, 0, 0);
+  font-size: 35px;
+}
+.fa-brands.fa-youtube.fa-2xl:hover {
+  color: rgb(241, 0, 0);
+  text-decoration: none;
+}
+
+.colum3 a {
+  font-size: 16px;
+  color: rgb(245, 241, 241);
+  margin-top: 10px;
+  text-align: center;
+  font-family: Comfortaa-VariableFont_wght;
+}
+
+.colum3 {
+  max-width: 400px;
+  text-align: center;
+}
+
+.colum3 h1 {
+  font-size: 22px;
+  text-align: center;
+
+  font-family: MartianMono;
+}
+
+/*Fin Ajustes redes sociales*/
+
+/*Inicio  Copyright*/
+.row2 {
+  margin-top: 20px;
+  display: flex;
+}
+
+.row2 img {
+  width: 36px;
+  height: 36px;
+}
+
+.lineaFooter {
+  width: 100%;
+  background: black;
+}
+
+.footer1 {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.copyright {
+  color: #c7c7c7;
+  font-size: smaller;
+  font-family: MartianMono;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 300px;
+}
+
+/*Fin Copyright */
+
+/* Ajustes Dropdown Menus */
+.navbar-nav :hover .dropdown-menu {
+  display: block;
+}
+
+.sesion {
+  font-size: 8px;
+  margin-top: 30px;
+  color: rgb(255, 255, 255);
+}
+
+i.fa-solid.fa-user-plus {
+  color: rgb(239, 239, 239);
+  cursor: pointer;
+  padding-left: 10%;
+  margin-top: 50%;
+}
+
+i.fa-solid.fa-user-plus:hover {
+  color: rgb(160, 231, 225);
+}
+
+.nav-link.dropdown-toggle::after {
+  content: none;
+}
+
+.colum3 a {
+  color: #ffffff;
+}
+
+.colum3 a:hover {
+  color: #2e2c2c;
+  text-decoration: none;
+}
+
+/*AJUSTES RESPONSIVE*/
+@media screen and (max-width: 600px) {
+  .lineaFooter {
+    font-size: 20px;
+  }
+
+  .copyright {
+    color: #c7c7c7;
+    font-size: 8px;
+    font-family: MartianMono;
+    margin-top: 1px;
+    margin-left: 1px;
+    text-align: center;
+  }
+
+  .footerInfo {
+    flex-wrap: wrap;
+  }
+
+  .colum1 {
+    max-width: 100%;
+  }
+  .colum2 {
+    margin-top: 40px;
+    margin-left: 50px;
+  }
+  .colum3 {
+    margin-top: 40px;
+    margin-left: 150px;
+  }
+}
+/*FIN AJUSTES RESPONSIVE*/
+
+/* GOTOP */
+
+.go-top-container {
+  position: fixed;
+  bottom: 3rem;
+  right: 0rem;
+  width: 6.6rem;
+  height: 6.6rem;
+  z-index: -1;
+}
+
+.go-top-button {
+  width: 3rem;
+  height: 3rem;
+  background-color: rgba(11, 5, 69, 0.636);
+  border-radius: 50%;
+  border-color: #ffffff7c;
+  border-style: groove;
+  cursor: pointer;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.go-top-button i {
+  position: absolute;
+  font-size: 1, 7rem;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  color: #ffffffd8;
+  transition: 0.2s;
+}
+.show {
+  z-index: 11;
+}
+
+.show .go-to-bbutton {
+  animation: popup 0.3s ease-in-out;
+  width: 6.6rem;
+  height: 6.6rem;
+  z-index: 9;
+}
+
+.show i {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+@keyframes popup {
+  0% {
+    width: 0rem;
+    height: 0rem;
+  }
+  50% {
+    width: 8rem;
+    height: 8rem;
+  }
+  100% {
+    width: 6.6rem;
+    height: 6.6rem;
+  }
+}

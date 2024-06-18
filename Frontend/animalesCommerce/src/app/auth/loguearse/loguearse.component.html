@@ -1,0 +1,24 @@
+<main>
+    <form class="container-sm" [formGroup]="form" (ngSubmit)="onEnviar($event)">
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Usuario</label>
+            <input type="text" class="form-control" id="exampleInputEmail1" name="exampleInputEmail1" aria-describedby="emailHelp" formControlName="username">
+            <div *ngIf="username?.errors && username?.touched">
+                <p *ngIf="username?.hasError('required')" class="text-danger">El usuario es requerido</p>
+            </div>              
+        </div>
+        <div class="mb-3">
+            <label for="password" class="form-label">Contraseña</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" name="exampleInputPassword1" formControlName="password">
+            <div *ngIf="password?.errors && password?.touched">
+                <p *ngIf="password?.hasError('required')" class="text-danger">La contraseña es requerida</p>
+                <p *ngIf="password?.errors?.['minlength']" class="text-danger">Ingrese una contraseña con un mínimo de 8 caracteres</p>
+            </div> 
+        </div>
+        <div class="enviar">
+            <button class="btn btn-primary" type="submit">Iniciar Sesión</button>
+            <span>¿No tienes una cuenta?
+            <a href="/registrarse" class="registro">Registrate</a></span>
+        </div>
+    </form>
+</main>

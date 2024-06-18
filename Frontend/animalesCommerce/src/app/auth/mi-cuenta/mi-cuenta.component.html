@@ -1,0 +1,78 @@
+<div class="wrapper  mt-sm-5">
+    <h4 class="pb-4 border-bottom">Mi cuenta {{user}}</h4>
+    <form name="formulario" id="formulario" action="" class="needs-validation"  method="post"
+        novalidate [formGroup]="form" (ngSubmit)="onEnviar($event)">
+        <div class="py-2">
+            <div class="row py-2">
+                <div class="col-md-6">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" class="bg-light form-control" [ngModel]="perfil.nombre" name="nombre" formControlName="nombre"
+                        required>
+                        <div *ngIf="nombre?.errors && nombre?.touched">
+                            <p *ngIf="nombre?.hasError('required')" class="text-danger">Ingrese un nombre</p>
+                            <p *ngIf="nombre?.errors?.['minlength']" class="text-danger">Minimo 3 caracteres</p>
+                            <p *ngIf="nombre?.errors?.['maxlength']" class="text-danger">Maximo 30 caracteres</p>
+                        </div> 
+                </div>
+                <div class="col-md-6">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" class="bg-light form-control" [ngModel]="perfil.apellido" name="apellido" formControlName="apellido"
+                        required>
+                        <div *ngIf="apellido?.errors && apellido?.touched">
+                            <p *ngIf="apellido?.hasError('required')" class="text-danger">Ingrese un apellido</p>
+                            <p *ngIf="apellido?.errors?.['minlength']" class="text-danger">Minimo 3 caracteres</p>
+                            <p *ngIf="apellido?.errors?.['maxlength']" class="text-danger">Maximo 30 caracteres</p>
+                        </div> 
+                </div>
+
+            </div>
+            <div class="row py-2">
+                <div class="col-md-6">
+                    <label for="phone">Teléfono</label>
+                    <input type="number" name="phone" class="bg-light form-control" [ngModel]="perfil.telefono" formControlName="telefono" required>
+                        <div *ngIf="telefono?.errors && telefono?.touched">
+                            <p *ngIf="telefono?.hasError('required')" class="text-danger">Ingrese un número de teléfono</p>
+                            <p *ngIf="telefono?.errors?.['minlength']" class="text-danger">Minimo 8 digitos</p>
+                            <p *ngIf="telefono?.errors?.['maxlength']" class="text-danger">Maximo 15 digitos</p>
+                        </div>
+                    <span id="phone-text"></span>
+                </div>
+
+
+                <div class="col-md-6 pt-md-0 pt-3">
+                    <label for="direccion">Direccion</label>
+                    <input type="text" class="bg-light form-control" [ngModel]="perfil.direccion" name="direccion" formControlName="direccion"
+                        required>
+                        <div *ngIf="direccion?.errors && direccion?.touched">
+                            <p *ngIf="direccion?.hasError('required')" class="text-danger">Ingrese una direccion</p>
+                            <p *ngIf="direccion?.errors?.['pattern']" class="text-danger">La dirección debe contener al menos 3 caracteres y un dígito.</p>
+                        </div> 
+                </div>
+            </div>
+            <div class="row py-2">
+                <div class="col-md-6 pt-md-0 pt-3">
+                    <label for="provincia">Provincia</label>
+                    <input type="text" name="provincia" class="bg-light form-control" [ngModel]="perfil.provincia" minlength="3"
+                        maxlength="20" formControlName="provincia" required>
+                        <div *ngIf="provincia?.errors && provincia?.touched">
+                            <p *ngIf="provincia?.hasError('required')" class="text-danger">Ingrese una provincia</p>
+                            <p *ngIf="provincia?.errors?.['pattern']" class="text-danger">La provincia solo puede contener letras</p>
+                        </div>
+                </div>
+                <div class="col-md-6 pt-md-0 pt-3">
+                    <label for="ciudad">Ciudad</label>
+                    <input type="text" name="ciudad" class="bg-light form-control" [ngModel]="perfil.ciudad" minlength="3"
+                        maxlength="20" formControlName="ciudad" required>
+                        <div *ngIf="ciudad?.errors && ciudad?.touched">
+                            <p *ngIf="ciudad?.hasError('required')" class="text-danger">Ingrese una ciudad</p>
+                            <p *ngIf="ciudad?.errors?.['pattern']" class="text-danger">La ciudad solo puede contener letras</p>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="py-3 pb-4 border-bottom">
+            <button class="btn btn-primary" type="submit">Guardar</button>
+            <span id="dinamic-text"></span>
+        </div>
+    </form>
+</div>

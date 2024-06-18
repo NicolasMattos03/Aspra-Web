@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.body-special {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+/*INICIA  BOTON DONAR*/
+.bton3 {
+  display: inline-block;
+  font-size: 86%;
+  background-color: rgb(11, 5, 69);
+  font-family: MartianMono-VariableFont;
+  color: rgb(255, 255, 255);
+  border: solid 1px;
+  border-color: rgb(11, 5, 69);
+  border-radius: 38px;
+  padding: 1%;
+  left: 570%;
+  position: relative;
+  margin-top: 1%;
+  text-align: center;
+  width: 700%;
+  min-height: 40px;
+  height: 50%;
+  cursor: pointer;
+}
+
+.bton3:hover {
+  background-color: rgb(22, 10, 129);
+  border-color: rgb(22, 10, 129);
+  color: rgb(252, 252, 252);
+}
+/*FINALIZA BOTON DONAR*/
+
+/* INICIA AJUSTES  NAVBAR*/
+
+.login {
+  margin-left: 65%;
+  margin-right: 0;
+}
+
+/* FINALIZA AJUSTES  NAVBAR*/
+
+.botonHeader {
+  display: inline-block;
+  position: relative;
+  top: 2%;
+  width: 50%;
+  height: 50%;
+  padding-bottom: 2%;
+  left: 35%;
+}
+
+.dropdown-item {
+  color: #ffffff;
+}
+
+/*Ajustes Menu Desplegable*/
+#pruebamenu {
+  background-color: #33b2cf;
+  color: #ffffff;
+  margin-left: 430%;
+}
+
+#pruebamenu a:hover {
+  background-color: #006075;
+}
+
+#estiloMenu {
+  background-color: #33b2cf;
+  font-family: MartianMono;
+  font-size: 86%;
+  position: 1px;
+  border: 0px;
+}
+
+#estiloMenu a:hover {
+  background: linear-gradient(#33b2cf, rgb(11, 5, 69));
+}
+
+#estiloIcon {
+  background-color: #fbfbfba6;
+  background-color: #33b2cf;
+  font-family: MartianMono-VariableFont;
+  font-size: 86%;
+  position: 1px;
+  border: 0px;
+  margin-top: -2%;
+  margin-left: 85%;
+}
+#estiloIcon a:hover {
+  background: linear-gradient(#33b2cf, rgb(11, 5, 69));
+}
+/* Fin Ajustes Menu Desplegable*/
+
+/* Ajustes Dropdown Menus */
+.navbar-nav :hover .dropdown-menu {
+  display: block;
+}
+.sesion {
+  font-size: 8px;
+  margin-top: 30px;
+  color: rgb(255, 255, 255);
+}
+
+i.fa-solid.fa-user.fa-2xl {
+  color: rgb(249, 247, 247);
+  cursor: pointer;
+  margin-top: 18px;
+}
+
+i.fa-solid.fa-user.fa-2xl:hover {
+  color: rgba(11, 5, 69, 0.911);
+}
+
+i.fa-solid.fa-store.fa-2xl {
+  color: rgb(249, 247, 247);
+  cursor: pointer;
+}
+
+i.fa-solid.fa-store.fa-2xl:hover {
+  color: rgba(11, 5, 69, 0.911);
+}
+
+.fa-solid.fa-store.fa-2xl {
+  margin-left: 50px;
+  margin-top: 15px;
+}
+
+.nav-link.dropdown-toggle::after {
+  content: none;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: rgb(240, 240, 240);
+  font-family: MartianMono-VariableFont;
+  font-size: 86%;
+  margin-top: 5px;
+  padding-left: 20px;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  background: linear-gradient(rgba(11, 5, 69, 0.911), #33b2cf);
+}
+.colum3 a {
+  color: #ffffff;
+}
+
+.colum3 a:hover {
+  color: #2e2c2c;
+  text-decoration: none;
+}
